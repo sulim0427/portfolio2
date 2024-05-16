@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마당발 브랜드 로고 기획</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="slick-theme.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="slider">
+        <div><img src="pild/pild2/section_01.png" alt=""></div>
+        <div><img src="pild/pild2/section_02.png" alt=""></div>
+        <div><img src="pild/pild2/section_03.png" alt=""></div>
+        <div><img src="pild/pild2/section_04.png" alt=""></div>
+        <div><img src="pild/pild2/section_05.png" alt=""></div>
+        <div><img src="pild/pild2/section_06.png" alt=""></div>
+        <div><img src="pild/pild2/section_07.png" alt=""></div>
+        <div><img src="pild/pild2/section_08.png" alt=""></div>
+        <div><img src="pild/pild2/section_09.png" alt=""></div>
+      </div>
+      <!-- <div class="indicator">
+        <span class="prevArrow">이전</span>
+        <span class="nextArrow">다음</span>          
+    </div> -->
+</body>
+<script>
+    $( document ).ready( function() {
+        
+        $(".slider").slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: "linear",
+//           prevArrow : $('.prevArrow'), 
+//   nextArrow : $('.nextArrow'), 
+        });
+        
+      } );
+    </script>
+</html>

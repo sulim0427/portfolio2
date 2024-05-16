@@ -1,0 +1,247 @@
+@charset "UTF-8";/*꼭 넣기*/
+@font-face {
+    font-family: 'HakgyoansimWoojuR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'HakgyoansimWoojuR';
+}
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+body{
+    font-family: "GmarketSansMedium";
+    font-size: 12px;
+    line-height: 22px;
+    color: #161514;
+    background-color: #eeeeee;
+ background-blend-mode: screen;
+    height: 100%;
+    list-style: none;
+}
+a{color: #161514; text-decoration: none;}
+
+#banner_wrap{
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+}
+.banner{
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 12px 12px 29px rgb(234, 233, 233), -12px -12px 29px #fafafa;
+    border-radius: 16px;
+    border: 1px solid snow;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px;
+}
+
+.bn_picture{
+    width: 50%;
+    height: 80vh;
+    background-image: url('../img/me.png');
+    background-position: 60% 50%;
+    border-radius: 16px;
+}
+
+
+
+.bn_text{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    word-break:break-all;
+}
+
+
+
+.bn_text h1{
+    display: inline-block;
+    font-size: 40px;
+}
+.text_title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.bn_text p{
+    font-size: 24px;
+    line-height: 24pt;
+}
+
+
+.banner2{
+    text-align: center;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 12px 12px 29px rgb(234, 233, 233), -12px -12px 29px #fafafa;
+    border-radius: 16px;
+    border: 1px solid snow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 24px;
+}
+
+.list_h1{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.list_text{
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 24px;
+}
+.list a{
+    text-align: center;
+    font-size: 24px;
+    color: snow;
+}
+.list li{
+    margin: 0 auto;
+    background-color: rgb(46, 46, 45);
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 40px;
+    font-weight: 800;
+    width: 30%;
+}
+
+@media (max-width: 800px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 24px;
+    }
+    .bn_picture{
+        width: 90%;
+        height: 400px;
+        background-image: url('../img/me.png');
+        background-position: 60% 50%;
+        border-radius: 16px;
+    }
+    .bn_text{
+        text-align: center;
+        width: 90%;
+        height: 100%;
+        padding: 20px;
+        word-break:break-all;
+    }
+}
+
+.cheenius_img img{
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+}
+
+.pild_img img{
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+}
+.pild2_img img{
+    width: 80%;
+    margin-bottom: 2%;
+}
+.pild3_img{
+    margin: 0 auto;
+    text-align: center;
+}
+.pild3_img img{
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+.pild4_img{
+    margin: 0 auto;
+}
+.pild4_img img{
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+.back_btn{
+    text-align: center;
+}
+.back_btn a{
+    font-size: 24px;
+    color: (46, 46, 45);
+    margin: 0 auto;
+    border: 2px solid rgb(46, 46, 45);
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    font-weight: 800;
+    width: 10%;
+}
+
+.custom-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+  }
+  /* .slick-prev, .slick-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(68, 68, 68);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+  }
+  .slick-prev {
+    position: fixed;
+    top: 40%;
+    left: 10%;
+    z-index: 999;
+  }
+  .slick-next {
+    position: fixed;
+    top: 40%;
+    right: 10%;
+    z-index: 999;
+  } */
+  .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .slick-dots li {
+    margin: -10px 5px;
+  }
+  .slick-dots li button {
+    font-size: 0; /* 숫자 숨기기 */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(182, 182, 182);
+    border: none;
+    cursor: pointer;
+  }
+  .slick-dots li.slick-active button {
+    background-color: rgb(46, 46, 45); /* 활성화된 점의 색상 */
+  }
+
